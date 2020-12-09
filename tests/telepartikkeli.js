@@ -9,6 +9,8 @@ test('Telepartikkeli Y-tunnus', async t => {
         await t
             .click('#generateCidSubmit');
     }
+    await t
+        .takeScreenshot();
     let counter = 100;
     while(counter--)
         await actions();
